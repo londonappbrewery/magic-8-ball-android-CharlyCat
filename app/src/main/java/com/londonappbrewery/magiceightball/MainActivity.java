@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         final ImageView balldisplay = (ImageView)findViewById(R.id.ballimage);
         Button QButton = (Button)findViewById(R.id.askbutton);
 
+        //Assign Ball response images to an array
         final int [] ballarray = {
                 R.drawable.ball1,
                 R.drawable.ball2,
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
                 R.drawable.ball4,
                 R.drawable.ball5};
 
+        //Set Ask Button to get random image from array with random number generator
         QButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
